@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>...</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/module/swiper-bundle.min.css" />
+    <script src="scripts/module/jquery-3.7.1.min.js"></script>
+    <script src="scripts/module/swiper-bundle.min.js"></script>
+    <script src="scripts/ui.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="logo"><i class="mo_menu"><img src="images/svg/mobile_menu.svg"></i><span class="title"></span><a href="#"><img src="images/svg/wooik_logo.svg"></a></h1>
+            <div class="menu">
+                <div class="mobile_ctrl"><img src="images/svg/wooik_logo.svg"><a href="#" class="close"><img src="images/svg/mobile_menu_close.svg"></a></div>
+                <div class="user_wrap">
+                    <p class="user"><i>W</i>김우익님</p>
+                    <button type="button">로그아웃</button>
+                </div>
+                <ul class="gnb">
+                    <li class="no_depth on"><a href="#"><img src="images/svg/icon_calendar.svg">근태내역</a></li>
+                    <li class="has_depth">
+                        <p><img src="images/svg/icon_image.svg">이미지 보안</p>
+                        <div class="depth">
+                            <div>
+                                <a href="#">이미지 승인 관리</a>
+                                <a href="#">이미지 결재 관리</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has_depth">
+                        <p><img src="images/svg/icon_setup.svg">환경설정</p>
+                        <div class="depth">
+                            <div>
+                                <a href="#">결재 담당자 관리</a>
+                                <a href="#">운영 담당자 관리</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div id="container">
+            <div class="content atndn_mgmt">
+                <h5 class="page_tit">안녕하세요. 김우익님!</h5>
+                <div class="section_wrap">
+                    <section class="top_text">
+                        <h5>근태관리</h5>
+                        <h6>나의 최근 5주치 근태 정보를<br> 주차별로 조회해 보세요.</h6>
+                    </section>
+                    <section class="viewer radius">
+                        <article class="control">
+                            <ul>
+                                <li><button type="button" title="이전"><img src="images/svg/icon_cal_prev_arrow.svg"></button></li>
+                                <li>2025-12-01 ~ 2025-12-07</li>
+                                <li><button type="button" title="다음"><img src="images/svg/icon_cal_next_arrow.svg"></button></li>
+                            </ul>
+                            <button type="button" class="week">금주</button>
+                        </article>
+                        <article class="graph_wrap">
+                            <!--근무시간안내-->
+                            <div class="raw">
+                                <p><img src="images/svg/icon_alarm.svg">주 <i>52시간</i> 근무 준수</p>
+                                <span>법정 근로시간은 근로기준법 제50조 및 동법 제53조 1항에 의거 주 52시간을 초과할 수 없습니다.</span>
+                            </div>
+                            <!--//근무시간안내-->
+                            <div class="graph">
+                                <h6>총 근무시간</h6>
+                                <div class="time">
+                                    <p><i class="total">41</i> / <i class="max">52</i>시간</p>
+                                    <span>근무시간</span>
+                                </div>
+                                <div class="chart">
+                                    <div class="bar"><p class="data"></p></div>
+                                    <p class="num"><i>0%</i><i>100%</i></p>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="detail">
+                        <ul>
+                            <li class="tit">총 근무 일수</li>
+                            <li class="data"><i>5</i>일</li>
+                            <li class="icon"><img src="images/svg/icon_calendar_day.svg"></li>
+                        </ul>
+                        <ul>
+                            <li class="tit">연장 시간</li>
+                            <li class="data"><i>2</i>시간 <i>30</i>분</li>
+                            <li class="icon"><img src="images/svg/icon_clock.svg"></li>
+                        </ul>
+                        <ul>
+                            <li class="tit">지각 시간</li>
+                            <li class="data"><i>1</i>시간</li>
+                            <li class="icon"><img src="images/svg/icon_emoji.svg"></li>
+                        </ul>
+                        <ul>
+                            <li class="tit">조퇴 시간</li>
+                            <li class="data"><i>0</i>일</li>
+                            <li class="icon"><img src="images/svg/icon_toolbox.svg"></li>
+                        </ul>
+                        <ul>
+                            <li class="tit">총 근무 시간</li>
+                            <li class="data"><i>50</i>시간</li>
+                            <li class="icon"><img src="images/svg/icon_fire.svg"></li>
+                        </ul>
+                    </section>
+                    <section class="grid radius">
+                        <div class="works_grid">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="fix">날짜</th>
+                                        <th>출근</th>
+                                        <th>퇴근</th>
+                                        <th>근무</th>
+                                        <th>지각</th>
+                                        <th>조퇴</th>
+                                        <th>연장</th>
+                                        <th>심야</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="fix">25-12-01</td>
+                                        <td>09:00</td>
+                                        <td>18:00</td>
+                                        <td>08:00</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>02:00</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fix">25-12-01</td>
+                                        <td>09:00</td>
+                                        <td>18:00</td>
+                                        <td>08:00</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>02:00</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>충남 아산시 신창면 창암리 120-4 <i>|</i> <a href="tel:041-537-5800">Tel : 041-537-5800</a> <i>|</i> <a href="mailto:master@wooik.com">master@wooik.com</a></p>
+            <p>COPYRIGHT 2026 WOOIK SEMICONDUCTOR CO.,LTD. ALL RIGHT RESERVED.</p>
+        </footer>
+    </div>
+</body>
+</html>
