@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>...</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/module/swiper-bundle.min.css" />
+    <script src="../scripts/module/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/module/swiper-bundle.min.js"></script>
+    <script src="../scripts/ui.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="logo"><i class="mo_menu"><img src="../images/svg/mobile_menu.svg"></i><span class="title"></span><a href="#"><img src="../images/svg/wooik_logo.svg"></a></h1>
+            <div class="menu">
+                <div class="mobile_ctrl"><img src="../images/svg/wooik_logo.svg"><a href="#" class="close"><img src="../images/svg/mobile_menu_close.svg"></a></div>
+                <div class="user_wrap">
+                    <p class="user"><i>W</i>김우익님</p>
+                    <button type="button">로그아웃</button>
+                </div>
+                <ul class="gnb">
+                    <li class="no_depth on"><a href="#"><img src="../images/svg/icon_calendar.svg">근태내역</a></li>
+                    <li class="has_depth">
+                        <p><img src="../images/svg/icon_image.svg">이미지 보안</p>
+                        <div class="depth">
+                            <div>
+                                <a href="#">이미지 승인 관리</a>
+                                <a href="#">이미지 결재 관리</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has_depth">
+                        <p><img src="../images/svg/icon_setup.svg">환경설정</p>
+                        <div class="depth">
+                            <div>
+                                <a href="#">결재 담당자 관리</a>
+                                <a href="#">운영 담당자 관리</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div id="container">
+            <div class="content image_mgmt">
+                <div class="title_set">
+                    <h5 class="page_tit">이미지 승인 관리</h5>
+                    <h6 class="page_sub_tit">보안카메라 촬영 이미지 외부 전송 요청 화면입니다. 거절 시 재요청이 불가하며, 이미지는 촬영일 기준 15일 후 자동 삭제됩니다.</h6>
+                </div>
+                <ul class="comm_tab">
+                    <li><a href="#" class="on">이미지 관리</a></li>
+                    <li><a href="#">승인요청 내역</a></li>
+                </ul>
+                <section class="gallery">
+                    <!--Top-->
+                    <article class="top">
+                        <p><i>00</i>건</p>
+                        <div class="ctrl">
+                            <button type="button" class="Button bgBlue">선택항목 승인요청</button>
+                            <div class="Select" data-width="78">
+                                <p class="value">10개</p>
+                                <ul class="list">
+                                    <li data-align="center">10개</li>
+                                    <li data-align="center">20개</li>
+                                    <li data-align="center">30개</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <!--//Top-->
+                    <!--Data-->
+                    <article class="data_warp">
+                        <div class="data">
+                            <!--Set-->
+                            <ul>
+                                <li class="thumb">
+                                    <label class="checkBox"><input type="checkbox"><i class="icon"></i></label>
+                                    <img src="../images/sample/gallery.jpg">
+                                </li>
+                                <li class="name"><a href="#">파일명_53.png</a></li>
+                                <li class="info"><a href="#">1014.3KBㆍ25-11-11 13:25</a></li>
+                            </ul>
+                            <!--//Set-->
+                            <!--Set-->
+                            <ul>
+                                <li class="thumb">
+                                    <label class="checkBox"><input type="checkbox"><i class="icon"></i></label>
+                                    <img src="../images/sample/gallery.jpg">
+                                </li>
+                                <li class="name"><a href="#">파일명_53.png</a></li>
+                                <li class="info"><a href="#">1014.3KBㆍ25-11-11 13:25</a></li>
+                            </ul>
+                            <!--//Set-->
+                        </div>
+                        <!--paging-->
+                        <div class="paging">
+                            <button type="button" title="이전페이지"><img src="../images/svg/paging_prev.svg"></button>
+                            <ul>
+                                <li><span>1</span></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul>
+                            <button type="button" title="다음페이지"><img src="../images/svg/paging_next.svg"></button>
+                        </div>
+                        <!--//paging-->
+                        <!--Mobile Check-->
+                        <div class="mobile_chk_fix">
+                            <p><i>NN</i>건 선택</p>
+                            <div class="ctrl">
+                                <button type="button" class="Button bgGray">전체선택</button>
+                                <button type="button" class="Button bgBlue">선택항목 승인요청</button>
+                            </div>
+                        </div>
+                        <!--//Mobile Check-->
+                    </article>
+                    <!--//Data-->
+                    <!--NoData-->
+                    <article class="no_data">
+                        <img src="../images/svg/no_data.svg">
+                        <p>전송할 이미지가 없습니다.</p>
+                    </article>
+                    <!--//NoData-->
+                </section>
+            </div>
+        </div>
+        <footer>
+            <p>충남 아산시 신창면 창암리 120-4 <i>|</i> <a href="tel:041-537-5800">Tel : 041-537-5800</a> <i>|</i> <a
+                    href="mailto:master@wooik.com">master@wooik.com</a></p>
+            <p>COPYRIGHT 2026 WOOIK SEMICONDUCTOR CO.,LTD. ALL RIGHT RESERVED.</p>
+        </footer>
+        <!--이미지팝업-->
+        <div class="layer_popup">
+            <div class="pop_data image_pop" data-width="470">
+                <div class="head">
+                    <h6>P20191016_000_파일명_53BDAF8E-6A</h6>
+                    <button type="button" class="close" title="닫기"><img src="../images/svg/popup_close.svg"></button>
+                </div>
+                <div class="body">
+                    <div class="img_data">
+                        <ul>
+                            <li><img src="../images/sample/gallery.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot">
+                    <p>25-11-11 13:25</p>
+                    <p>1014.3KB</p>
+                </div>
+            </div>
+        </div>
+        <!--//이미지팝업-->
+    </div>
+</body>
+</html>
